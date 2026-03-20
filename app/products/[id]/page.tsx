@@ -21,14 +21,15 @@ export default function ProductDetailsPage() {
   }
 
   const [activeTab, setActiveTab] = useState<'description' | 'technical'>('description');
-  const [activeImage, setActiveImage] = useState<string | undefined>(undefined);
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [activeMedia, setActiveMedia] = useState<string | undefined>(undefined);
+  
+  const videoUrl = "https://cdn.clinicalvisuals.com/medical/tsi/landingpage/tsi_01.webm";
 
   useEffect(() => {
-    if (product && !activeImage) {
-      setActiveImage(product.image);
+    if (product && !activeMedia) {
+      setActiveMedia(product.image);
     }
-  }, [product, activeImage]);
+  }, [product, activeMedia]);
 
   if (!product) {
     return (
@@ -40,6 +41,8 @@ export default function ProductDetailsPage() {
       </main>
     );
   }
+
+  const isVideo = (url: string) => url.endsWith('.webm') || url.endsWith('.mp4');
 
   return (
     <main className="min-h-screen bg-white">
@@ -58,36 +61,36 @@ export default function ProductDetailsPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-12 items-start">
             
-            {/* Left: Images */}
+            {/* Left: Images/Video Gallery */}
             <div className="flex flex-col gap-4">
-              <div className="bg-white rounded-[16px] shadow-sm border border-gray-100 p-10 flex items-center justify-center aspect-[4/3]">
-                <img src={activeImage || product.image} alt={product.name} className="max-h-[380px] object-contain transition-all" />
+              <div className="bg-white rounded-[16px] shadow-sm border border-gray-100 p-10 flex items-center justify-center aspect-[4/3] overflow-hidden">
+                {activeMedia && isVideo(activeMedia) ? (
+                   <video key={activeMedia} src={activeMedia} autoPlay controls muted className="w-full h-full object-contain rounded-lg" />
+                ) : (
+                   <img src={activeMedia || product.image} alt={product.name} className="max-h-[380px] object-contain transition-all" />
+                )}
               </div>
               
-              {/* Thumbnails + Video Toggle */}
+              {/* Thumbnails */}
               <div className="flex gap-4 overflow-x-auto pb-2 items-center">
-                {/* Product Images */}
+                {/* Image Thumbnails */}
                 {[product.image, ...(product.thumbnails || []).filter((img: string) => img !== product.image)].map((img, idx) => (
                   <div 
                     key={idx} 
-                    onClick={() => setActiveImage(img)}
-                    className={`cursor-pointer border-2 bg-white rounded-lg p-3 flex items-center justify-center w-[110px] h-[85px] shrink-0 transition-colors ${activeImage === img ? 'border-[#2A317A]' : 'border-transparent hover:border-gray-200'}`}
+                    onClick={() => setActiveMedia(img)}
+                    className={`cursor-pointer border-2 bg-white rounded-lg p-3 flex items-center justify-center w-[110px] h-[85px] shrink-0 transition-colors ${activeMedia === img ? 'border-[#2A317A]' : 'border-transparent hover:border-gray-200'}`}
                   >
                     <img src={img} alt="thumbnail" className="h-full object-contain" />
                   </div>
                 ))}
                 
-                {/* Video Thumbnail (Always present as requested) */}
+                {/* Video Thumbnail */}
                 <div 
-                  onClick={() => setIsVideoOpen(true)}
-                  className="cursor-pointer border-2 border-transparent bg-white rounded-lg p-3 flex flex-col items-center justify-center w-[110px] h-[85px] shrink-0 transition-colors hover:border-[#4BCBF5] shadow-sm relative group"
+                  onClick={() => setActiveMedia(videoUrl)}
+                  className={`cursor-pointer border-2 bg-white rounded-lg p-3 flex flex-col items-center justify-center w-[110px] h-[85px] shrink-0 transition-colors relative group overflow-hidden ${activeMedia === videoUrl ? 'border-[#2A317A]' : 'border-transparent hover:border-gray-200'}`}
                 >
-                  <div className="w-8 h-8 rounded-full bg-[#2A317A] flex items-center justify-center text-white mb-1 group-hover:scale-110 transition-transform">
-                    <svg className="w-4 h-4 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                  <span className="text-[10px] font-bold text-[#2A317A]">Watch Video</span>
+                  <video src={videoUrl} className="absolute inset-0 w-full h-full object-cover" />
+                  <span className="relative z-10 text-[10px] font-bold text-white drop-shadow-md bg-black/40 px-2 py-1 rounded">Video</span>
                 </div>
               </div>
             </div>
@@ -122,29 +125,6 @@ export default function ProductDetailsPage() {
           </div>
         </div>
       </div>
-
-      {/* Video Modal Overlay */}
-      {isVideoOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 md:p-12 animate-in fade-in duration-300">
-          <button 
-            onClick={() => setIsVideoOpen(false)}
-            className="absolute top-8 right-8 text-white hover:text-[#4BCBF5] transition-colors p-2"
-          >
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-          <div className="w-full max-w-[1100px] aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl">
-             <video 
-               src="https://cdn.clinicalvisuals.com/medical/tsi/landingpage/tsi_01.webm" 
-               autoPlay 
-               controls 
-               className="w-full h-full object-contain"
-             ></video>
-          </div>
-        </div>
-      )}
-
       {/* Tabs Section */}
       <div className="bg-[#EFEFEF] py-16 pb-32">
         <div className="container mx-auto px-4 max-w-[1280px]">
@@ -210,6 +190,66 @@ export default function ProductDetailsPage() {
             </div>
           </div>
 
+        </div>
+      </div>
+
+      {/* Related Products Section (Catalog functionality) */}
+      <div className="bg-white py-24 pb-32">
+        <div className="container mx-auto px-4 max-w-[1280px]">
+          <div className="flex items-center justify-between mb-12">
+            <div>
+               <h4 className="text-[#4BCBF5] font-bold text-[14px] uppercase tracking-wider mb-2">Explore More</h4>
+               <h2 className="text-3xl font-bold text-[#2A317A]">Related Products</h2>
+            </div>
+            <Link href="/products" className="text-[#2A317A] font-bold text-[15px] hover:text-[#4BCBF5] border-b-2 border-[#2A317A] hover:border-[#4BCBF5] transition-all pb-1">View Full Catalog</Link>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {Object.values(productsDataRaw).flat().slice(0, 4).map((p: any) => (
+              <div key={p.id} className="group flex flex-col bg-white rounded-xl border border-[#DDE4EE] overflow-hidden hover:shadow-xl transition-all duration-500 p-3">
+                <Link href={`/products/${p.id}`} className="block aspect-[4/3] bg-[#F1F1F1] p-6 relative overflow-hidden rounded-xl">
+                  <img src={p.image} alt={p.name} className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110" />
+                </Link>
+                <div className="p-6 flex flex-col flex-1">
+                  <Link href={`/products/${p.id}`}>
+                    <h3 className="text-[17px] font-bold text-[#2A317A] mb-3 hover:text-[#4BCBF5] transition-colors">{p.name}</h3>
+                  </Link>
+                  <p className="text-[12.5px] text-gray-500 leading-relaxed line-clamp-2 mb-6">{p.description}</p>
+                  <Button href={`/products/${p.id}`} variant="primary" padding="py-3 w-full" fontSize="text-[12px]" className="bg-[#4BCBF5] hover:bg-[#3ab1d6]">View Details</Button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Reviews Section */}
+      <div className="bg-[#F9F9F9] py-24">
+        <div className="container mx-auto px-4 max-w-[1280px]">
+           <div className="text-center mb-16">
+              <h4 className="text-[#4BCBF5] font-bold text-[14px] uppercase tracking-wider mb-2">Customer Feedback</h4>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#2A317A]">Product Reviews</h2>
+           </div>
+           
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+             {[1, 2, 3].map(i => (
+               <div key={i} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                  <div className="flex gap-1 mb-4 text-yellow-400">
+                     {[...Array(5)].map((_, idx) => (
+                        <svg key={idx} className="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" /></svg>
+                     ))}
+                  </div>
+                  <p className="text-[14px] text-gray-600 leading-relaxed italic mb-6">"Medstrom Aria Flex has transformed our ward's pressure ulcer management. The adaptive therapy is a game changer for critical patient care."</p>
+                  <div className="flex items-center gap-4">
+                     <div className="w-10 h-10 rounded-full bg-gray-200"></div>
+                     <div>
+                        <h5 className="font-bold text-[#2A317A] text-[15px]">Senior Clinician</h5>
+                        <p className="text-[12px] text-gray-400 font-medium">Acute Care Trust</p>
+                     </div>
+                  </div>
+               </div>
+             ))}
+           </div>
         </div>
       </div>
 

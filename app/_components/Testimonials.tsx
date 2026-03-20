@@ -44,7 +44,7 @@ export default function Testimonials() {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <Button href="#" radius="rounded-full" padding="px-12 py-3.5">View All Our Testimonials</Button>
+          <Button href="#" padding="px-12 py-3.5">View All Our Testimonials</Button>
         </div>
       </div>
     </section>

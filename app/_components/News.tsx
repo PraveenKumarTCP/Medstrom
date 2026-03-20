@@ -32,8 +32,8 @@ export default function News() {
                 />
               </div>
               <div className="flex flex-col px-1 mt-1">
-                <h3 className="text-[16px] font-bold text-[#333] mb-2 leading-relaxed group-hover:text-[#2A317A] transition-colors">{article.title}</h3>
-                <p className="text-[11px] text-gray-500 font-medium">{article.date}</p>
+                <h3 className="text-[20px] font-bold text-[#333] mb-2 leading-relaxed group-hover:text-[#2A317A] transition-colors line-clamp-1">{article.title}</h3>
+                <p className="text-[14px]! text-gray-500 font-medium">{article.date}</p>
               </div>
             </div>
           ))}
