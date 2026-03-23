@@ -24,13 +24,13 @@ const slides = [
     },
     {
         id: 2,
-        title: "Efficiency Meets Intelligence",
-        description: "Introducing the TSI OmniTrak™ Solution – make your job easier wirelessly connecting modules to take measurements, create reports.",
+        title: "3,000 Outstanding Patient Outcomes",
+        description: "We have now collected data for over 3,000 highly complex patients nursed on a Dolphin Therapy support surface, and have seen outstanding results.",
     },
     {
         id: 3,
-        title: "Stay Safe In the Face of Wildfire Smoke",
-        description: "Wildfires occurring in the wildland-urban interface present a major health hazard for local communities not only outside but also inside buildings.",
+        title: "10,000 Beds Manufactured",
+        description: "Medstrom recently celebrated a remarkable milestone in the company’s history, with the 10,000th UK manufactured hospital bed rolling off its process line",
     }
 ];
 

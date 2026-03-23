@@ -110,7 +110,9 @@ export default function Header() {
                     href={link.href}
                     className={`text-[14px] xl:text-[16px] font-semibold whitespace-nowrap transition-colors duration-200 px-2 xl:px-3 py-2 ${isActive
                       ? "text-[#47C1EF] underline decoration-[#47C1EF] decoration-2 underline-offset-8"
-                      : "text-[#484848] hover:text-[#47C1EF]"
+                      : link.label === "Products" 
+                        ? "text-[#000000] hover:text-[#47C1EF]" 
+                        : "text-[#888888] hover:text-[#47C1EF]"
                       }`}
                   >
                     {link.label}
