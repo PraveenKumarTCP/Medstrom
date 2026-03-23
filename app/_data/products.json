@@ -4,17 +4,29 @@
       "id": 1,
       "name": "Medstrom Aria Flex",
       "description": "Discover the advanced semi-dynamic support surface that offers immediate protection from pressure ulcers and behaves like a dynamic mattress, even in non-powered mode.",
-      "image": "/images/products/product-1.png",
+      "image": "/medstrom/images/products/product-1.png",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -30,8 +42,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",
@@ -63,17 +75,29 @@
       "id": 2,
       "name": "Medstrom Aria",
       "description": "Discover the new air immersion dynamic range from Medstrom.",
-      "image": "/images/products/product-2.png",
+      "image": "/medstrom/images/products/product-2.png",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -89,8 +113,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",
@@ -122,17 +146,29 @@
       "id": 3,
       "name": "Protecta Luxe",
       "description": "Designed for full compatibility with the Medstrom Solo Low bed frame.",
-      "image": "/images/products/product-3.png",
+      "image": "/medstrom/images/products/product-3.png",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -148,8 +184,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",
@@ -182,18 +218,30 @@
     {
       "id": 4,
       "name": "Aria Lateral Tilt Bed and Dolphin Therapy",
-      "description": "This unique bed and surface duo combines full platform lateral tilt.",
-      "image": "/images/products/product-4.png",
+      "description": "This unique bed and surface duo combines full platform lateral tilt and exceptional immersion. It offers an ideal solution for the most complex patients.",
+      "image": "/medstrom/images/products/product-4.png",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -209,8 +257,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",
@@ -241,18 +289,30 @@
     {
       "id": 5,
       "name": "Eleganza 5 Bed and Dolphin Therapy",
-      "description": "A unique combination of full platform lateral tilt with on-bed immersion.",
-      "image": "/images/products/product-5.png",
+      "description": "A unique combination of full platform lateral tilt with unrivalled immersion.",
+      "image": "/medstrom/images/products/product-5.png",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -268,8 +328,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",
@@ -300,18 +360,30 @@
     {
       "id": 6,
       "name": "Vela XL Extra-Wide Stretcher",
-      "description": "The Vela XL Stretcher is a versatile extra-wide stretcher.",
-      "image": "/images/products/product-6.png",
+      "description": "The Vela XL Stretcher is a versatile extra-wide stretcher supporting improved patient care throughout a hospital stay.",
+      "image": "/medstrom/images/products/product-6.png",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -327,8 +399,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",
@@ -362,17 +434,29 @@
       "id": 7,
       "name": "Medstrom Solo+",
       "description": "A unique and highly versatile hospital bed.",
-      "image": "/images/products/product-7.png",
+      "image": "/medstrom/images/products/product-7.png",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -388,8 +472,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",
@@ -420,18 +504,30 @@
     {
       "id": 8,
       "name": "Medstrom SoloMH",
-      "description": "The SoloMH bed is an innovative electric profiling bed.",
-      "image": "/images/products/product-8.png",
+      "description": "The SoloMH bed is an innovative four-section electric profiling bed designed to enhance safety and protect both patients and caregivers.",
+      "image": "/medstrom/images/products/product-8.png",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -447,8 +543,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",
@@ -479,18 +575,30 @@
     {
       "id": 9,
       "name": "Medstrom Solo Luxe",
-      "description": "Uniquely suitable for children, adults and adults with atypical anatomy.",
-      "image": "/images/products/product-9.png",
+      "description": "Uniquely suitable for children, adults and adults with atypical anatomy, the Solo Luxe offers enhanced protection and safety for all.",
+      "image": "/medstrom/images/products/product-9.png",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -506,8 +614,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",
@@ -540,18 +648,30 @@
     {
       "id": 10,
       "name": "MMO 8000",
-      "description": "MMO 8000 is a versatile, ultra-low hospital bed.",
-      "image": "/images/products/product-10.png",
+      "description": "MMO 8000 is a versatile, ultra-low hospital bed for plus-size patients which offers effective solutions for falls prevention and safe mobilisation.",
+      "image": "/medstrom/images/products/product-10.png",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -567,8 +687,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",
@@ -600,17 +720,29 @@
       "id": 11,
       "name": "Versatech 1100",
       "description": "Medstrom expands its bariatric range with the Versatech 1100 bed.",
-      "image": "/images/products/product-11.jpg",
+      "image": "/medstrom/images/products/product-11.jpg",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -626,8 +758,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",
@@ -659,17 +791,29 @@
       "id": 12,
       "name": "Bari10A",
       "description": "The Bari10A bariatric hospital bed delivers effective positioning.",
-      "image": "/images/products/product-12.png",
+      "image": "/medstrom/images/products/product-12.png",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -685,8 +829,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",
@@ -720,17 +864,29 @@
       "id": 13,
       "name": "ECO Shower",
       "description": "Medstrom ECO enhances patient hygiene with a precise spray.",
-      "image": "/images/products/product-13.png",
+      "image": "/medstrom/images/products/product-13.png",
       "thumbnails": [
-        "/images/products/product-1.png",
-        "/images/products/product-2.png",
-        "/images/products/product-3.png"
+        "/medstrom/images/products/product-1.png",
+        "/medstrom/images/products/product-2.png",
+        "/medstrom/images/products/product-3.png"
       ],
       "keyFeatures": [
-        "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology.",
-        "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort.",
-        "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'.",
-        "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        {
+          "icon": "/medstrom/images/home/mattress.png",
+          "message": "Even in non-powered mode, the Medstrom Aria Flex provides adjustable immersion and envelopment due to cell-in-cell and valve technology."
+        },
+        {
+          "icon": "/medstrom/images/home/hand.png",
+          "message": "2.5cm super-soft, shear friendly, visco-elastic foam layer above the immersive cells achieves high levels of envelopment and comfort."
+        },
+        {
+          "icon": "/medstrom/images/home/data.png",
+          "message": "The optional control unit can be added quickly and easily, provides greater flexibility for 'stepping up' or 'stepping down'."
+        },
+        {
+          "icon": "/medstrom/images/home/pose.png",
+          "message": "A therapeutic pressure profile is maintained at all times without any intervention from the caregiver."
+        }
       ],
       "tabDescription": {
         "title": "Superior Protection with Adaptive Therapy",
@@ -746,8 +902,8 @@
           "value": "250kg (39st)"
         },
         {
-          "label": "Min patient weight",
-          "value": "250kg (39st)"
+          "label": "Control unit weight",
+          "value": "1.8 kg"
         },
         {
           "label": "Total length and width",

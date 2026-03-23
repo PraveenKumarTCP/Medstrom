@@ -8,14 +8,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const icons: Record<string, string> = {
-  bed: "/images/bed.png",
-  maintenance: "/images/clipboard.png",
-  decontamination: "/images/security.png",
-  advisors: "/images/doctor-consultaion.png",
-  tracking: "/images/search.png",
-  upholstery: "/images/upholstery.png",
-  audit: "/images/legal.png",
-  rental: "/images/rental-service.png",
+  bed: "/medstrom/images/bed.png",
+  maintenance: "/medstrom/images/clipboard.png",
+  decontamination: "/medstrom/images/security.png",
+  advisors: "/medstrom/images/doctor-consultaion.png",
+  tracking: "/medstrom/images/search.png",
+  upholstery: "/medstrom/images/upholstery.png",
+  audit: "/medstrom/images/legal.png",
+  rental: "/medstrom/images/rental-service.png",
 };
 
 const servicesCards = [
@@ -71,30 +71,30 @@ const servicesCards = [
 
 export default function Services() {
   return (
-    <section className="py-24" id="services">
+    <section className="py-24 overflow-hidden" id="services">
       <div className="container mx-auto px-4">
         {/* ── Section header ─────────────────────────────── */}
         <div className="grid grid-cols-1 md:grid-cols-12 mb-8 items-end gap-6">
           <div className="md:col-span-9">
-            <h4 className="text-[#2A317A] font-bold text-md mb-3">
+            <h4 className="text-[#2A317A] font-bold text-md mb-3" data-aos="fade-up">
               Our Services
             </h4>
-            <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-[#484848] leading-[1.15] mb-5">
+            <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-[#484848] leading-[1.15] mb-5" data-aos="fade-up" data-aos-delay="100">
               Advanced Clinical Solutions for{" "}
               <span className="bg-gradient-to-r from-[#47C1EF] to-[#2A317A] bg-clip-text text-transparent">
                 Safer Patient Care
               </span>
             </h2>
-            <p className="text-[#666] text-[13px] leading-relaxed max-w-[800px]">
+            <p className="text-[#666] text-[13px] leading-relaxed max-w-[800px]" data-aos="fade-up" data-aos-delay="200">
               The Medstrom ethos is straightforward: right patient, right product, right time. We empower clinicians
               with updated knowledge and relevant clinical solutions for effective product use.
             </p>
           </div>
 
-          {/* Nav buttons (Desktop right-aligned) */}
-          <div className="md:col-span-3 flex justify-start md:justify-end gap-3 pb-2 services-nav-container">
+          {/* Nav buttons (right-aligned) */}
+          <div className="md:col-span-3 flex justify-end gap-3 pb-2 services-nav-container" data-aos="fade-left" data-aos-delay="300">
             <button
-              className="services-prev w-12 h-12 rounded-full flex items-center justify-center text-white bg-[#4BCBF5] hover:bg-[#3ab1d6] transition-colors shadow-sm focus:outline-none"
+              className="services-prev w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-white bg-[#4BCBF5] hover:bg-[#3ab1d6] transition-colors shadow-sm focus:outline-none"
               aria-label="Previous service"
             >
               <svg className="w-5 h-5 mr-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -102,7 +102,7 @@ export default function Services() {
               </svg>
             </button>
             <button
-              className="services-next w-12 h-12 rounded-full flex items-center justify-center text-white bg-[#4BCBF5] hover:bg-[#3ab1d6] transition-colors shadow-sm focus:outline-none"
+              className="services-next w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-white bg-[#4BCBF5] hover:bg-[#3ab1d6] transition-colors shadow-sm focus:outline-none"
               aria-label="Next service"
             >
               <svg className="w-5 h-5 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,25 +116,26 @@ export default function Services() {
         <div className="w-full h-[1px] bg-[#DDDDDD]"></div>
 
         {/* ── Swiper Component ───────────────────────────── */}
-        <Swiper
-          className="services-swiper !pb-12"
-          modules={[Navigation]}
-          navigation={{
-            nextEl: ".services-next",
-            prevEl: ".services-prev",
-          }}
-          spaceBetween={0}
-          loop={true}
-          centeredSlides={true}
-          breakpoints={{
-            0: { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-        >
+        <div data-aos="fade-up" data-aos-delay="400">
+          <Swiper
+            className="services-swiper !pb-12"
+            modules={[Navigation]}
+            navigation={{
+              nextEl: ".services-next",
+              prevEl: ".services-prev",
+            }}
+            spaceBetween={0}
+            loop={true}
+            centeredSlides={false}
+            breakpoints={{
+              0: { slidesPerView: 1, spaceBetween: 16, centeredSlides: false },
+              768: { slidesPerView: 2, spaceBetween: 0, centeredSlides: false },
+              1024: { slidesPerView: 3, spaceBetween: 0, centeredSlides: false },
+            }}
+          >
           {servicesCards.map((card) => (
-            <SwiperSlide key={card.id} className="!h-auto group/slide">
-              <div className="flex flex-col h-full bg-transparent px-8 py-12 transition-all duration-500 group-[.swiper-slide-active]/slide:border-l group-[.swiper-slide-active]/slide:border-r border-[#DDDDDD]">
+            <SwiperSlide key={card.id} className="!h-auto group/slide border-r border-[#DDDDDD] sm:border-l-0">
+              <div className="flex flex-col h-full bg-transparent px-6 lg:px-10 py-12 transition-all duration-500">
                 {/* Header: Icon + Title */}
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-[64px] h-[64px] bg-white rounded-lg flex items-center justify-center shadow-sm shrink-0 p-3">
@@ -163,7 +164,8 @@ export default function Services() {
               </div>
             </SwiperSlide>
           ))}
-        </Swiper>
+          </Swiper>
+        </div>
       </div>
     </section>
   );

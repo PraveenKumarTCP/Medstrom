@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function About() {
   return (
-    <section className="py-20 bg-white" id="about">
+    <section className="py-20 bg-white overflow-hidden" id="about">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
@@ -12,10 +12,10 @@ export default function About() {
 
             {/* Header Section */}
             <div className="mb-8">
-              <h4 className="text-[#2A317A] font-bold text-md mb-3">
+              <h4 className="text-[#2A317A] font-bold text-md mb-3" data-aos="fade-up">
                 About Medstrom
               </h4>
-              <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-[#484848] leading-[1.15]">
+              <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-[#484848] leading-[1.15]" data-aos="fade-up" data-aos-delay="100">
                 Precision-Driven Hospital{" "}
                 <span className="bg-gradient-to-r from-[#47C1EF] to-[#2A317A] bg-clip-text text-transparent">
                   Bed <br className="hidden sm:block" /> Solutions
@@ -28,18 +28,18 @@ export default function About() {
             <div className="grid grid-cols-1 sm:grid-cols-12 gap-8 flex-1">
 
               {/* Left Grey Image Placeholder */}
-              <div className=" sm:col-span-5 bg-[#D9D9D9] rounded-xl overflow-hidden min-h-[350px] w-full h-full shadow-sm">
-                {/* Reserved space for future image */}
+              <div className=" sm:col-span-5 rounded-xl overflow-hidden min-h-[350px] w-full h-full" data-aos="fade-right" data-aos-delay="200">
+                <img src="/medstrom/images/home/abt-2.png" alt="" className="h-full w-full object-cover" />
               </div>
 
               {/* Middle Text / Actions */}
-              <div className=" sm:col-span-7 flex flex-col justify-start text-justify">
+              <div className=" sm:col-span-7 flex flex-col justify-start text-justify" data-aos="fade-left" data-aos-delay="300">
                 <p className="text-[#484848] leading-relaxed mb-6">
                   We have built a service culture that supports all staff who use our products and we care passionately about attaining the best possible outcomes for patients. Uncertainty surrounding Brexit prompted our commitment to start manufacturing in the UK in 2020, sourcing many components locally. Our manufacturing model allows us to control supply chain, quality, cost and highly responsive delivery times.
                 </p>
 
                 <ul className="space-y-4 mb-8 flex-1">
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-3" data-aos="fade-up" data-aos-delay="400">
                     <svg className="w-6 h-6 text-[#47C1EF] shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                     </svg>
@@ -55,7 +55,7 @@ export default function About() {
                       Our flexibility, honesty and dedication to ‘do the right thing’ means we work hand-in-hand with our new customers to make contract transitions seamless.
                     </span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-3" data-aos="fade-up" data-aos-delay="600">
                     <svg className="w-6 h-6 text-[#47C1EF] shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                     </svg>
@@ -66,7 +66,7 @@ export default function About() {
                 </ul>
 
                 {/* CTA & Phone */}
-                <div className="flex items-center flex-wrap gap-4 mt-auto pt-2">
+                <div className="flex items-center flex-wrap gap-4 mt-auto pt-2" data-aos="fade-up" data-aos-delay="700">
                   <Button href="/about" variant="primary" fontSize="12px">Read More</Button>
                   <div className="flex items-center gap-3 ml-2">
                     <div className="w-14 h-14 rounded-full flex items-center justify-center bg-white shadow-[0_0_5px_rgba(0,0,0,0.3)] shrink-0">
@@ -98,16 +98,16 @@ export default function About() {
           {/* ── Right Column: Interactive Images (Spans 4 cols on LG) ── */}
           <div className="lg:col-span-4 flex flex-col gap-4 pt-1 mt-6 lg:mt-0">
             {/* Top Image */}
-            <div className="flex-1 w-full rounded-xl overflow-hidden shadow-sm relative border border-gray-100/50 min-h-[250px]">
+            <div className="flex-1 w-full rounded-xl overflow-hidden shadow-sm relative min-h-[250px]" data-aos="fade-left" data-aos-delay="400">
               <img
-                src="/images/home/abt-1.png"
+                src="/medstrom/images/home/abt-1.png"
                 alt="Hospital staff looking at a screen"
                 className="w-full h-full object-cover absolute inset-0"
               />
             </div>
 
             {/* Bottom Youtube Video Block */}
-            <div className="flex-1 w-full rounded-xl overflow-hidden shadow-sm relative border border-gray-100/50 bg-black min-h-[250px]">
+            <div className="flex-1 w-full rounded-xl overflow-hidden shadow-sm relative bg-black min-h-[250px]" data-aos="fade-left" data-aos-delay="600">
               <iframe
                 src="https://www.youtube.com/embed/0q1sCOXzTzk?rel=0"
                 title="Why medstrom+ Youtube Video"

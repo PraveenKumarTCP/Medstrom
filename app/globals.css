@@ -3,14 +3,14 @@
 /* ─── Design Tokens ───────────────────────────────────────────── */
 @theme {
   /* Brand Colors */
-  --color-primary:      #1B61A6;
+  --color-primary: #1B61A6;
   --color-primary-dark: #134880;
-  --color-accent:       #00AEEF;
-  --color-dark:         #1C2D4A;
-  --color-text:         #333333;
-  --color-muted:        #666666;
-  --color-light:        #F4F8FC;
-  --color-border:       #E2EAF4;
+  --color-accent: #00AEEF;
+  --color-dark: #1C2D4A;
+  --color-text: #333333;
+  --color-muted: #666666;
+  --color-light: #F4F8FC;
+  --color-border: #E2EAF4;
 
   /* Typography */
   --font-sans: var(--font-nunito-sans), "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
@@ -23,9 +23,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   font-family: var(--font-sans);
@@ -35,7 +32,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-p, .paragraph {
+p,
+.paragraph {
   font-size: 16px !important;
   font-weight: 400;
   font-style: normal;

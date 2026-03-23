@@ -6,42 +6,42 @@ const cardsData = [
     id: 1,
     title: "Acute Care",
     description: "With growing and aging populations, the demand for acute care is rising year-round. Increasing patient complexity and risks, such as pressure ulcers and falls, require timely and effective care solutions.",
-    image: "/images/home/client-1.png",
+    image: "/medstrom/images/home/client-1.png",
     fallbackColor: "bg-[#B47556]"
   },
   {
     id: 2,
     title: "ITU & Critical Care",
     description: "Prolonged immobility can lead to further complications and disability, especially in critically ill ICU patients. Early mobilisation is proven to improve recovery and patient outcomes.",
-    image: "/images/home/client-2.png",
+    image: "/medstrom/images/home/client-2.png",
     fallbackColor: "bg-[#28536B]"
   },
   {
     id: 3,
     title: "Specialist Care",
     description: "The number of complex patients in general wards is increasing. Specialist beds and surfaces improve patient care while enhancing caregiver efficiency and reducing manual handling risks.",
-    image: "/images/home/client-3.png",
+    image: "/medstrom/images/home/client-3.png",
     fallbackColor: "bg-[#6A7F93]"
   }
 ];
 
 export default function OurClinicians() {
   return (
-    <section className="py-20 bg-[#F9F9F9]" id="our-clinicians">
+    <section className="py-20 bg-[#F9F9F9] overflow-hidden" id="our-clinicians">
       <div className="container mx-auto px-4">
 
         {/* ── Section header ─────────────────────────────── */}
         <div className="text-center mb-14 flex flex-col items-center">
-          <h4 className="text-[#2A317A] font-bold text-md mb-3">
-            Our Clicians
+          <h4 className="text-[#2A317A] font-bold text-md mb-3" data-aos="fade-up">
+            Our Clinians
           </h4>
-          <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-[#484848] leading-[1.15] mb-5">
+          <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-[#484848] leading-[1.15] mb-5" data-aos="fade-up" data-aos-delay="100">
             Clinically Led Solutions for{" "}
             <span className="bg-gradient-to-r from-[#47C1EF] to-[#2A317A] bg-clip-text text-transparent">
               Better Outcomes
             </span>
           </h2>
-          <p className="text-[#666] text-[13.5px] leading-relaxed max-w-4xl text-center mx-auto">
+          <p className="text-[#666] text-[13.5px] leading-relaxed max-w-4xl text-center mx-auto" data-aos="fade-up" data-aos-delay="200">
             The Medstrom ethos is simple: right patient, right product, right time. This ethos drives our product offering, but also enables us to educate and lead the way with clinical solutions that are pertinent in todays healthcare arena. Led by clinicians, for clinicians, we continuously update our knowledge to help you utilise our products effectively.
           </p>
         </div>
@@ -52,6 +52,8 @@ export default function OurClinicians() {
             <div
               key={card.id}
               className="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 block aspect-[4/3] md:aspect-[5/4] lg:aspect-[4/3] cursor-pointer"
+              data-aos="zoom-in"
+              data-aos-delay={card.id * 100}
             >
               {/* Background image & Fallback */}
               <div className={`absolute inset-0 ${card.fallbackColor}`}></div>
@@ -82,7 +84,7 @@ export default function OurClinicians() {
         </div>
 
         {/* ── CTA button ────────────────────────────────── */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
           <Button href="#" variant="primary" fontSize="12px">View What Our Clinician Do</Button>
         </div>
       </div>

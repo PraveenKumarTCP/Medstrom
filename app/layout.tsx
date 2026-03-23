@@ -11,12 +11,16 @@ const nunitoSans = Nunito_Sans({
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/images/icon.png",
+    icon: "/medstrom/images/icon.png",
+    shortcut: "/medstrom/images/icon.png",
+    apple: "/medstrom/images/icon.png",
   },
   title: "Medstrom — Clinically Led Hospital Solutions",
   description:
     "Medstrom delivers precision-driven hospital bed and patient care solutions across acute care, ICU, and specialised environments.",
 };
+
+import { AOSInit } from "./_components/AOSInit";
 
 export default function RootLayout({
   children,
@@ -25,7 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${nunitoSans.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col overflow-x-hidden">
+        <AOSInit />
+        {children}
+      </body>
     </html>
   );
 }

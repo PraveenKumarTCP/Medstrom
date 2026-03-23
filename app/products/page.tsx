@@ -6,6 +6,8 @@ import Footer from "../_components/Footer";
 import Button from "../_components/Button";
 import productsDataRaw from "../_data/products.json";
 
+import ProductCard from "../_components/ProductCard";
+
 // Import raw JSON and map type
 type Product = typeof productsDataRaw[keyof typeof productsDataRaw][0];
 const productsData: Record<string, Product[]> = productsDataRaw as any;
@@ -59,37 +61,7 @@ export default function ProductsListingPage() {
           {/* Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {filteredProducts.map((product) => (
-              <div key={product.id} className="group flex flex-col bg-white rounded-xl border border-[#DDE4EE] overflow-hidden hover:shadow-xl transition-all duration-500 p-3">
-                {/* Image Area */}
-                <Link href={`/products/${product.id}`} className="block aspect-[4/3] bg-[#F1F1F1] p-6 relative overflow-hidden rounded-xl">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
-                  />
-                </Link>
-
-                {/* Content Area */}
-                <div className="p-6 flex flex-col flex-1">
-                  <Link href={`/products/${product.id}`}>
-                    <h3 className="text-[17px] font-bold text-[#2A317A] mb-3 hover:text-[#4BCBF5] transition-colors">{product.name}</h3>
-                  </Link>
-                  <p className="text-[12px] text-[#555] leading-relaxed mb-6 line-clamp-3">
-                    {product.description}
-                  </p>
-
-                  <div className="mt-auto">
-                    <Button
-                      href={`/products/${product.id}`}
-                      variant="primary"
-                      padding="py-3 w-full"
-                      className="bg-[#4BCBF5] hover:bg-[#3ab1d6]"
-                    >
-                      Make an Enquiry
-                    </Button>
-                  </div>
-                </div>
-              </div>
+              <ProductCard key={product.id} product={product} />
             ))}
           </div>
         </div>

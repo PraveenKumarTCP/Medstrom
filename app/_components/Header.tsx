@@ -33,22 +33,22 @@ export default function Header() {
         <div
           className="bg-[#2A317A] text-white"
         >
-          <div className="container mx-auto flex items-center justify-between px-4 lg:px-12">
-            {/* Top nav links — no separators, tight spacing */}
-            <nav className="hidden md:flex items-center ml-12 lg:ml-20">
+          <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 lg:px-12">
+            {/* Top nav links — hide on mobile, show from xl up with wrap support */}
+            <nav className="hidden xl:flex flex-wrap items-center justify-center md:justify-start flex-1 overflow-hidden">
               {topNavLinks.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-[14.5px] px-4 py-3 text-white transition-colors whitespace-nowrap font-medium"
+                  className="text-[11px] xl:text-[14.5px] px-3 lg:px-4 py-2 lg:py-3 text-white transition-colors font-medium hover:text-white/80"
                 >
                   {link.label}
                 </Link>
               ))}
             </nav>
 
-            {/* Language selector */}
-            <div className="flex items-center gap-1.5 ml-auto md:ml-0 py-2">
+            {/* Language selector — centered on small screens, right-aligned on larger */}
+            <div className="flex items-center gap-1.5 ml-auto xl:ml-0 py-2">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -62,7 +62,7 @@ export default function Header() {
                 />
                 <path d="M2 12h20" strokeWidth="1.5" />
               </svg>
-              <button className="flex items-center gap-1.5 text-white hover:text-white/80 transition-colors font-medium text-[14.5px]">
+              <button className="flex items-center gap-1.5 text-white hover:text-white/80 transition-colors font-medium text-[13px] lg:text-[14.5px]">
                 English (en)
                 <svg
                   fill="none"
@@ -95,11 +95,11 @@ export default function Header() {
           <div className="container mx-auto h-[70px] flex items-center px-4 lg:px-8">
             {/* Logo */}
             <Link href="/" className="flex flex-col shrink-0 leading-none mr-12">
-              <img src="/images/medstrom-logo.svg" alt="Medstrom Logo" className="h-10 xl:h-12 w-auto" />
+              <img src="/medstrom/images/medstrom-logo.svg" alt="Medstrom Logo" className="h-10 xl:h-12 w-auto" />
             </Link>
 
             {/* Desktop nav links */}
-            <nav className="hidden lg:flex items-center flex-1 justify-center gap-2 xl:gap-6 mr-8">
+            <nav className="hidden xl:flex flex-wrap items-center flex-1 justify-center gap-1 xl:gap-6 mr-4 xl:mr-8 overflow-hidden">
               {mainNavLinks.map((link) => {
                 const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
                 const isHighlight = (link as { label: string; href: string; highlight?: boolean }).highlight;
@@ -108,7 +108,7 @@ export default function Header() {
                   <Link
                     key={link.label}
                     href={link.href}
-                    className={`text-[16px] font-semibold whitespace-nowrap transition-colors duration-200 px-2 xl:px-3 py-2 ${isActive
+                    className={`text-[14px] xl:text-[16px] font-semibold whitespace-nowrap transition-colors duration-200 px-2 xl:px-3 py-2 ${isActive
                       ? "text-[#47C1EF] underline decoration-[#47C1EF] decoration-2 underline-offset-8"
                       : "text-[#484848] hover:text-[#47C1EF]"
                       }`}
@@ -120,7 +120,7 @@ export default function Header() {
             </nav>
 
             {/* Search box — rounded pill, soft border */}
-            <div className="hidden lg:flex items-center ml-auto bg-white border-[1.5px] border-[#E5E7EB] rounded-lg overflow-hidden h-[42px] shadow-[0_1px_2px_rgba(0,0,0,0.02)] w-[300px]">
+            <div className="hidden xl:flex items-center ml-auto bg-white border-[1.5px] border-[#E5E7EB] rounded-lg overflow-hidden h-[42px] shadow-[0_1px_2px_rgba(0,0,0,0.02)] w-[300px]">
               <input
                 type="text"
                 placeholder="Search Everything"
@@ -130,12 +130,12 @@ export default function Header() {
                 aria-label="Search"
                 className="h-full bg-white hover:bg-gray-50 flex items-center justify-center transition-colors px-3 cursor-pointer border-l-0"
               >
-                <img src="/images/search.svg" alt="Search" className="w-5 h-5" />
+                <img src="/medstrom/images/search.svg" alt="Search" className="w-5 h-5" />
               </button>
             </div>
 
             {/* Mobile: search + hamburger */}
-            <div className="lg:hidden flex items-center gap-2 ml-auto">
+            <div className="xl:hidden flex items-center gap-2 ml-auto">
               <button aria-label="Search" className="p-2 text-[#666] hover:text-[#1B61A6] transition-colors">
                 <svg
                   className="w-5 h-5"
@@ -167,7 +167,7 @@ export default function Header() {
 
           {/* ── Mobile drawer ───────────────────────────────── */}
           {mobileOpen && (
-            <div className="lg:hidden border-t border-[#E2EAF4] bg-white">
+            <div className="xl:hidden border-t border-[#E2EAF4] bg-white">
               {/* Top links */}
               <div className="border-b border-[#E2EAF4] bg-[#F4F8FC] py-2">
                 {topNavLinks.map((link) => (

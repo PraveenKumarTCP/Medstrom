@@ -11,9 +11,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 mb-16 px-2">
 
           {/* Logo & Newsletter (Col span 3) */}
-          <div className="lg:col-span-3 flex flex-col gap-6">
+          <div className="lg:col-span-3 flex flex-col gap-6" data-aos="fade-up">
             <Link href="/" className="inline-block">
-              <img src="/images/medstrom-logo.svg" alt="Medstrom - Improved Patient Outcomes" className="h-16 object-contain" />
+              <img src="/medstrom/images/medstrom-logo.svg" alt="Medstrom - Improved Patient Outcomes" className="h-16 object-contain" />
             </Link>
 
             <div className="flex w-full mt-2 rounded overflow-hidden">
@@ -25,7 +25,7 @@ export default function Footer() {
               <button
                 className="bg-[#2A317A] px-4 py-3 flex items-center justify-center transition-colors hover:bg-[#4BCBF5] focus:outline-none group flex-shrink-0"
               >
-                <img src="/images/send.png" alt="" className="h-5" />
+                <img src="/medstrom/images/send.png" alt="" className="h-5" />
               </button>
             </div>
 
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links (Col span 2) */}
-          <div className="lg:col-span-2 lg:pl-4">
+          <div className="lg:col-span-2 lg:pl-4" data-aos="fade-up" data-aos-delay="100">
             <h4 className="font-bold text-[#484848] text-xl mb-6">Quick Links</h4>
             <ul className="space-y-4 flex flex-col">
               {['Why Medstrom?', 'Total Bed Management', 'Clinical Solutions', 'Careers', 'News & Events', 'Carbon Reduction Plan'].map((link) => (
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           {/* Company (Col span 2) */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2" data-aos="fade-up" data-aos-delay="200">
             <h4 className="font-bold text-[#484848] text-xl mb-6">Company</h4>
             <ul className="space-y-4 flex flex-col">
               {['Modern Slavery Statement', 'Gender Pay Gap Report', 'Data Collection', 'Environmental Policy', 'Cookie Policy', 'Vulnerability Policy', 'Site by Distract'].map((link) => (
@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
 
           {/* Products (Col span 2) */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2" data-aos="fade-up" data-aos-delay="300">
             <h4 className="font-bold text-[#484848] text-xl mb-6">Products</h4>
             <ul className="space-y-4 flex flex-col">
               {['Hospital Beds', 'Critical Care Beds', 'Pressure Area Care', 'Bariatric'].map((link) => {
@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
 
           {/* Contact (Col span 3) */}
-          <div className="lg:col-span-3 lg:pl-4">
+          <div className="lg:col-span-3 lg:pl-4" data-aos="fade-up" data-aos-delay="400">
             <h4 className="text-xl font-bold text-[#484848] mb-6">Contact Us</h4>
             <div className="flex flex-col gap-[22px]">
               <div className="flex items-start gap-4">
@@ -105,8 +105,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar Container */}
-        <div className="border-t border-[#DDDDDD] mt-4 pt-6 text-center">
-          <p className="text-[14px]! text-gray-500">Medstrom Ltd {new Date().getFullYear()}. All rights reserved.</p>
+        <div className="border-t border-[#DDDDDD] mt-4 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 px-2">
+          <p className="text-[14px]! text-[#484848] font-medium"> © {new Date().getFullYear()} Medstrom Ltd. All rights reserved.</p>
+          <div className="flex gap-8">
+            <Link href="#" className="text-[14px] text-[#484848] font-medium hover:text-[#47C1EF] transition-colors">Terms & Conditions</Link>
+            <Link href="#" className="text-[14px] text-[#484848] font-medium hover:text-[#47C1EF] transition-colors">Privacy Policy</Link>
+          </div>
         </div>
       </div>
     </footer>
